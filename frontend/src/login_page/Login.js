@@ -15,7 +15,7 @@ const Login = () => {
 
         try {
             const response = await axios.post(
-                "http://localhost:3002/api/auth/login",
+                "https://hivemind-yhqh.onrender.com/api/auth/login",
                 { email, password },
                 { withCredentials: true }
             );

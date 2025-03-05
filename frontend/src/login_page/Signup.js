@@ -15,7 +15,7 @@ const Signup = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post("http://localhost:3002/api/auth/signup", {
+            const response = await axios.post("https://hivemind-yhqh.onrender.com/api/auth/signup", {
                 email,
                 password,
                 username,
