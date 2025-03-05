@@ -31,7 +31,7 @@ const Login = () => {
 
                 // ✅ Redirect using backend response
                 setTimeout(() => {
-                    window.location.href = `https://hivemindsocialapp.netlify.app/user/${response.data.username}/feed`;
+                    window.location.href = response.data.redirectUrl;
                     // Ensure this is used
                 }, 2000);
 

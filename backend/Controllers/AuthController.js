@@ -78,7 +78,7 @@ module.exports.Login = async (req, res) => {
       message: "User logged in successfully",
       success: true,
       username: user.username,
-      redirectUrl: "https://zerodha-clonee-dashboard.netlify.app", // Ensure this is correct
+      redirectUrl: `https://hivemindsocialapp.netlify.app/user/${user.username}/feed`, // Ensure this is correct
     });
 
   } catch (error) {

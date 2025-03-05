@@ -25,6 +25,14 @@ const corsOptions = {
   optionsSuccessStatus: 200,
 };
 
+res.cookie("token", token, {
+  withCredentials: true, // Ensure this is consistent with frontend
+  httpOnly: false, // Set to true for production
+  secure: true, // Set to true in production with HTTPS
+  sameSite: 'None', // Required for cross-origin cookies
+});
+
+
 
 app.use(cors(corsOptions));
 
