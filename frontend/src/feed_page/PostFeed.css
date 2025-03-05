@@ -150,7 +150,12 @@
       grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablets */
     }
   
-    .search-bar, .sort-dropdown, .tag-dropdown {
+    .search-bar {
+      width: 95%;
+      margin-bottom: 10px; /* Stack on smaller screens */
+    }
+
+    .sort-dropdown, .tag-dropdown {
       width: 100%;
       margin-bottom: 10px; /* Stack on smaller screens */
     }
@@ -175,3 +180,64 @@
     color: inherit; /* Prevent color change on hover */
   }
   
+  /* Ensure post details are stacked vertically on smaller screens */
+@media (max-width: 768px) {
+  .post-details {
+      flex-direction: column; /* Stack the likes, dislikes, and tags vertically */
+      align-items: flex-start;
+      gap: 10px; /* Add space between reactions and tags */
+  }
+
+  .reactions {
+      justify-content: flex-start; /* Align reactions to the left */
+  }
+
+  .tags {
+      margin-top: 5px;
+      display: block;
+  }
+}
+
+/* Further adjustment for very small screens */
+@media (max-width: 1180px) {
+  .post-card {
+      padding: 15px;
+  }
+
+  .post-details {
+      flex-direction: column; /* Ensure column layout for very small screens */
+      align-items: flex-start;
+  }
+
+  .reactions {
+      flex-direction: row; /* Ensure reactions are still horizontal */
+      gap: 15px;
+  }
+
+  .tags {
+      margin-top: 8px;
+      font-size: 0.85rem; /* Reduce tag size slightly on small screens */
+      word-wrap: break-word; /* Ensure long tags don't overflow */
+  }
+}
+
+
+/* Add a scrollbar to post cards if content overflows vertically */
+.post-card {
+  max-height: 300px; /* Set a maximum height for the posts */
+  overflow-y: auto;  /* Enable vertical scroll if content exceeds height */
+}
+
+/* Customize the scrollbar for a better UI experience */
+.post-card::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.post-card::-webkit-scrollbar-thumb {
+  background-color: #ff0066; /* Pink color for the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners for the scrollbar */
+}
+
+.post-card::-webkit-scrollbar-track {
+  background-color: #333; /* Dark background for the scrollbar track */
+}
