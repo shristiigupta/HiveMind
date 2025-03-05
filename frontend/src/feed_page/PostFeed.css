@@ -234,7 +234,7 @@
 }
 
 .post-card::-webkit-scrollbar-thumb {
-  background-color: #ff0066; /* Pink color for the scrollbar thumb */
+  background-color: rgb(134, 25, 69); /* Pink color for the scrollbar thumb */
   border-radius: 4px; /* Rounded corners for the scrollbar */
 }
 
