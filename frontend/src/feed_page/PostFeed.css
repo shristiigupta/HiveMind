@@ -1,193 +1,193 @@
 .username {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.5rem;
-  text-align: center;
-  margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .post-feed {
-  padding: 20px;
-  background-color: #1a1a1a; /* Dark background */
-  color: #fff; /* White text */
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  max-width: 1200px;
-  margin: 0 auto; /* Centers content */
+    padding: 20px;
+    background-color: #1a1a1a; /* Dark background */
+    color: #fff; /* White text */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers content */
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
-  gap: 20px; /* Space between cards */
-  justify-content: center;
-  margin-top: 30px; /* Adds space between search bar and posts */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px; /* Space between cards */
+    justify-content: center;
+    margin-top: 30px; /* Adds space between search bar and posts */
 }
 
 .post-card {
-  background-color: #e89bb5;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly darker shadow */
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 300px; /* Fixed height */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
+    background-color: #e89bb5;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly darker shadow */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px; /* Fixed height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
 }
 
 .post-card:hover {
-  transform: translateY(-5px); /* Slight upward movement on hover */
-  box-shadow: 0 6px 12px rgba(255, 0, 102, 0.6); /* Pink shadow on hover */
+    transform: translateY(-5px); /* Slight upward movement on hover */
+    box-shadow: 0 6px 12px rgba(255, 0, 102, 0.6); /* Pink shadow on hover */
 }
 
 .post-content h2 {
-  font-size: 1.2rem;
-  color: black; /* Black text for titles */
-  margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: black; /* Black text for titles */
+    margin-bottom: 10px;
 }
 
 .post-content p {
-  font-size: 0.9rem;
-  color: #000; /* Black for post body */
-  white-space: pre-line; /* Ensure the text wraps onto the next line */
+    font-size: 0.9rem;
+    color: #000; /* Black for post body */
+    white-space: pre-line; /* Ensure the text wraps onto the next line */
 }
 
 .post-details {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  color: #f2f2f2;
-  display: flex;
-  justify-content: space-between;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
 }
 
 .reactions {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .like, .dislike {
-  display: flex;
-  align-items: center;
-  color: #ff005f; /* Darker pink for hearts and reactions */
+    display: flex;
+    align-items: center;
+    color: #ff005f; /* Darker pink for hearts and reactions */
 }
 
 .dislike {
-  color: #c71585; /* Darker color for thumbs down */
+    color: #c71585; /* Darker color for thumbs down */
 }
 
 .like svg, .dislike svg {
-  margin-right: 5px;
+    margin-right: 5px;
 }
 
 .tags {
-  color: #782a44; /* Light pink for tags */
-  font-weight: bold;
+    color: #782a44; /* Light pink for tags */
+    font-weight: bold;
 }
 
 .search-sort-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px; /* Space between the search/sort and posts */
-  gap: 20px; /* Added gap between search, filter, and sort */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Space between the search/sort and posts */
+    gap: 20px; /* Added gap between search, filter, and sort */
 }
 
 .search-bar {
-  width: 60%; /* Adjusted width for search bar */
-  padding: 12px;
-  border-radius: 25px;
-  border: 1px solid #ff0066; /* Pink border */
-  background-color: #333;
-  color: #fff;
-  transition: all 0.3s ease;
+    width: 60%; /* Adjusted width for search bar */
+    padding: 12px;
+    border-radius: 25px;
+    border: 1px solid #ff0066; /* Pink border */
+    background-color: #333;
+    color: #fff;
+    transition: all 0.3s ease;
 }
 
 .search-bar:focus {
-  outline: none;
-  border-color: #ff80ab; /* Lighter pink on focus */
+    outline: none;
+    border-color: #ff80ab; /* Lighter pink on focus */
 }
 
 .sort-dropdown, .tag-dropdown {
-  width: 18%; /* Adjusted width for sort and tag dropdowns */
-  padding: 12px;
-  border-radius: 25px;
-  border: 1px solid #ff0066; /* Pink border */
-  background-color: #333;
-  color: #fff;
-  transition: all 0.3s ease;
+    width: 18%; /* Adjusted width for sort and tag dropdowns */
+    padding: 12px;
+    border-radius: 25px;
+    border: 1px solid #ff0066; /* Pink border */
+    background-color: #333;
+    color: #fff;
+    transition: all 0.3s ease;
 }
 
 .sort-dropdown:focus, .tag-dropdown:focus {
-  outline: none;
-  border-color: #ff80ab; /* Lighter pink on focus */
+    outline: none;
+    border-color: #ff80ab; /* Lighter pink on focus */
 }
 
 .pagination {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .pagination button {
-  padding: 8px 12px;
-  margin: 0 5px;
-  border: none;
-  background-color: #ff0066; /* Pink button */
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 30px;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: none;
+    background-color: #ff0066; /* Pink button */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
 }
 
 .pagination button:hover {
-  background-color: #ff80ab; /* Light pink on hover */
+    background-color: #ff80ab; /* Light pink on hover */
 }
 
 .pagination .active {
-  background-color: #d81b60;
+    background-color: #d81b60;
 }
 
 /* Tablet view adjustments */
 @media (max-width: 768px) {
-  .grid-container {
-      grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablets */
-  }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablets */
+    }
 
-  .search-sort-container {
-      flex-direction: column;
-      gap: 15px;
-  }
+    .search-sort-container {
+        flex-direction: column;
+        gap: 15px;
+    }
 
-  .search-bar, .sort-dropdown, .tag-dropdown {
-      width: 100%; /* Full width on smaller screens */
-  }
+    .search-bar, .sort-dropdown, .tag-dropdown {
+        width: 100%; /* Full width on smaller screens */
+    }
 
-  .username {
-      font-size: 1.2rem;
-  }
+    .username {
+        font-size: 1.2rem;
+    }
 }
 
 /* Mobile view adjustments */
 @media (max-width: 480px) {
-  .grid-container {
-      grid-template-columns: repeat(1, 1fr); /* 1 card per row on mobile devices */
-  }
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 card per row on mobile devices */
+    }
 
-  .post-card {
-      height: auto; /* Remove fixed height for mobile */
-  }
+    .post-card {
+        height: auto; /* Remove fixed height for mobile */
+    }
 
-  .post-content h2 {
-      font-size: 1rem; /* Adjusted font size for mobile */
-  }
+    .post-content h2 {
+        font-size: 1rem; /* Adjusted font size for mobile */
+    }
 
-  .post-content p {
-      font-size: 0.8rem; /* Adjusted font size for mobile */
-  }
+    .post-content p {
+        font-size: 0.8rem; /* Adjusted font size for mobile */
+    }
 
-  .username {
-      font-size: 1rem;
-  }
+    .username {
+        font-size: 1rem;
+    }
 }
