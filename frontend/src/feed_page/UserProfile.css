@@ -1,0 +1,41 @@
+.user-profile-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+}
+
+.user-card {
+  background-color: #1c1c1e;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(255, 192, 203, 0.2);
+  color: white;
+  text-align: center;
+}
+
+.user-card h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff69b4;
+  margin-bottom: 15px;
+}
+
+.user-card p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.author-link {
+  color: #ff69b4;
+  text-decoration: none;
+}
+
+.author-link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,121 @@
+/* Container for the post details page */
+.post-details-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+}
+
+/* Card styling for the post */
+.post-card-details {
+    background-color: #1c1c1e;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(255, 192, 203, 0.2);
+    color: white;
+}
+
+/* Post title styling */
+.post-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff69b4; /* Pink color for the title */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Author information */
+.post-author {
+    font-size: 16px;
+    color: #ff69b4;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+/* Post image styling */
+.post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+/* Post body (text content) styling */
+.post-body {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Reactions section styling */
+.post-reactions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.like, .dislike, .comment {
+    font-size: 18px;
+    color: #a12563; /* Pink color for the reactions */
+    display: flex;
+    align-items: center;
+    padding: 5%;
+}
+
+.comment:hover {
+    text-decoration: underline;
+}
+
+/* Comments section */
+.comments-title {
+    padding: 2%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff69b4;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Styling for the comments list */
+.comments-list {
+    list-style: none;
+    padding: 0;
+}
+
+.comment-item {
+    background-color: #2c2c2e;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.comment-item strong {
+    color: #ff69b4;
+    padding: 2%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .post-card-details {
+        max-width: 100%;
+    }
+
+    .post-title {
+        font-size: 22px;
+    }
+
+    .post-body {
+        font-size: 16px;
+    }
+
+    .comments-title {
+        font-size: 18px;
+    }
+}
