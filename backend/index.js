@@ -14,13 +14,13 @@ const app = express();
 
 // CORS middleware configuration
 app.use(cors({
-  origin: ["http://localhost:3000"],  // Adjust frontend URL if necessary
+  origin: ["https://hivemindsocialapp.netlify.app"],  // Adjust frontend URL if necessary
   credentials: true,                // Allow credentials and cookies
   optionsSuccessStatus: 200,
 }));
 
 const corsOptions = {
-  origin: "http://localhost:3000",  // Frontend URL
+  origin: "https://hivemindsocialapp.netlify.app",  // Frontend URL
   credentials: true,                // Allow credentials (cookies)
   optionsSuccessStatus: 200,
 };
