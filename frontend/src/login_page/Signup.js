@@ -23,12 +23,13 @@ const Signup = () => {
             }, { withCredentials: true });
 
             if (response.data.success) {
+                console.log(response.data.redirectUrl);
                 // After successful login
                 localStorage.setItem("username", response.data.username);
 
                 setSuccess(true);
                 setTimeout(() => {
-                    window.location.href = `https://hivemindsocialapp.netlify.app/user/${response.data.username}/feed`;
+                    window.location.href = response.data.redirectUrl;
                     // Redirect to login page after successful signup
                 }, 2000);
             } else {
