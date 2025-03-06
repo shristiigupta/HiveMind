@@ -34,6 +34,14 @@ module.exports.Signup = async (req, res, next) => {
 
     // Send success response
     res.status(201).json({ message: "User signed up successfully", success: true, user });
+
+    return res.status(200).json({
+      message: "User signed up in successfully",
+      success: true,
+      username: user.username,
+      redirectUrl: `https://hivemindsocialapp.netlify.app/user/${user.username}/feed`, // Ensure this is correct
+    });
+
     next();
   } catch (error) {
     console.error(error);

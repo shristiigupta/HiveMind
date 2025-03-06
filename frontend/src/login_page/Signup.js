@@ -28,7 +28,7 @@ const Signup = () => {
 
                 setSuccess(true);
                 setTimeout(() => {
-                    window.location.href = `https://hivemindsocialapp.netlify.app/${response.data.username}/feed`;
+                    window.location.href = `https://hivemindsocialapp.netlify.app/user/${response.data.username}/feed`;
                     // Redirect to login page after successful signup
                 }, 2000);
             } else {
