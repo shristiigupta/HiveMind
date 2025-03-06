@@ -50,7 +50,7 @@ const Signup = () => {
                 <h2>Create an Account</h2>
 
                 {error && <p className="error-message">{error}</p>}
-                {success && <p className="success-message">Signup successful! Redirecting to login...</p>}
+                {success && <p className="success-message">Signup successful! Redirecting to post feed...</p>}
 
                 <form onSubmit={handleSignup}>
                     <div className="input-group">
